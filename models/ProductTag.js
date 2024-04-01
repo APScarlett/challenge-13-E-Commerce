@@ -1,6 +1,7 @@
 const { Model, DataTypes } = require('sequelize');
 
 const sequelize = require('../config/connection');
+const { DATE } = require('sequelize');
 
 class ProductTag extends Model {}
 
@@ -14,15 +15,19 @@ ProductTag.init(
       autoIncrement:true,
     },
 
-    product_name:{
-      type:DataTypes.STRING,
-      allowNull:false,
+    product_id:{
+      type:DataTypes.INTEGER,
+      references:{
+        model:'product',
+        key: 'id',
+      }
     },
-    price:{
-      type:DataTypes.DECIMAL,
-      allowNull:false,
-      validate:{  //this is used to validate the decimal
-        isDecimal:true, 
+ 
+    tag_id:{ //this foreign key refrences the tag parent
+      type:DataTypes.INTEGER,
+      references:{
+        model:'category',
+        key:'id',
       }
     }
   },
