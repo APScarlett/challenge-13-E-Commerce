@@ -25,7 +25,7 @@ ProductTag.init(
     tag_id:{ //this foreign key refrences the tag parent
       type:DataTypes.INTEGER,
       references:{
-        model:'category',
+        model:'tag',
         key:'id',
       }
     }
