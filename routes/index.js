@@ -1,19 +1,11 @@
 const router = require('express').Router();
-const categoryRoutes = require('/category-routes');
-const productRoutes = require('./product-routes');
-const tagRoutes =require("./tag-routes");
+const apiRoutes = require('./api');
 
-//http://localhost:3001/api/categories
-router.use('/categories', categoryRoutes);
+// http://localhost:3001/api
+router.use('/api', apiRoutes);
 
-//http://localhost:3001/api/products
-router.use('/products', productRoutes);
-
-//http://localhost:3001/api/tags
-router.use('/tags', tagRoutes);
-
-
-
-
+router.use((req, res) => {
+  res.send("<h1>Wrong Route!</h1>")
+});
 
 module.exports = router;
