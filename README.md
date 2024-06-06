@@ -1,5 +1,6 @@
 # Challenge 13 E-Commerce
 https://drive.google.com/file/d/1qM7-P9-xqMi89Z7Mi0VKdI_VJOBmPBc-/view
+[![Image from Gyazo](https://i.gyazo.com/3e8e73f5a69b7cd9392150c22cce632d.png)](https://gyazo.com/3e8e73f5a69b7cd9392150c22cce632d)
   [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) 
 
  ## Description
